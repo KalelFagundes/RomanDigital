@@ -55,3 +55,15 @@ RomanDigital/
 │
 └── README.md
 Projeto desenvolvido em grupo como atividade acadêmica do SENAC.
+## Integrantes do Projeto
+
+Curso: Análise e Desenvolvimento de Sistemas
+
+Projeto Integrador: Sistemas Web e Personas
+
+### Equipe
+
+1. Kalel Fagundes Ferreira
+2. Yan Gabriel dos Santos
+3. Thais de Paiva Oliveira
+4. Vitor Avila de Carvalho
