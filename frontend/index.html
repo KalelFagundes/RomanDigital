@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RomanDigital | Gestão Logística</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>Roman<span>Digital</span></h2>
+
+        
+<nav>
+    <a href="#" class="active" onclick="destacarMenu(this); mostrarDashboard(); return false;">Dashboard</a>
+
+<a href="#" onclick="destacarMenu(this); mostrarPedidos(); return false;">Pedidos</a>
+
+<a href="#" onclick="destacarMenu(this); mostrarRomaneios(); return false;">Romaneios</a>
+    <a href="#" onclick="mostrarMotoristas(); return false;">Motoristas</a>
+    <a href="#" onclick="mostrarVeiculos(); return false;">Veículos</a>
+</nav>
+
+    </aside>
+
+    <main class="content">
+        <section id="tela-pedidos" style="display: none;">
+
+    <h1>Pedidos</h1>
+
+    <p>Cadastre e consulte os pedidos do RomanDigital.</p>
+
+    <h2>Novo Pedido</h2>
+
+    <form id="form-pedido">
+
+        <label>Nome do cliente:</label>
+        <input type="text" id="cliente" required>
+
+        <label>Endereço de entrega:</label>
+        <input type="text" id="endereco" required>
+
+        <label>Produto:</label>
+        <input type="text" id="produto" required>
+
+        <label>Quantidade:</label>
+        <input type="number" id="quantidade" min="1" required>
+
+        <button type="submit">Cadastrar Pedido</button>
+
+    </form>
+
+    <h2>Pedidos Cadastrados</h2>
+
+    <div id="lista-pedidos">
+        Carregando pedidos...
+    </div>
+
+</section>
+    <div id="tela-dashboard">    
+<header>
+            <div>
+                <h1>Dashboard</h1>
+                <p>Bem-vindo ao RomanDigital!</p>
+            </div>
+            <span>Gestão Logística</span>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <p>Total de pedidos</p>
+                <h2 id="totalPedidos">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Em andamento</p>
+                <h2 id="emAndamento">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Entregues</p>
+                <h2 id="entregues">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Pendentes</p>
+                <h2 id="pendentes">0</h2>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Bem-vindo à plataforma!</h2>
+            <p>
+                Gerencie pedidos, organize romaneios e acompanhe
+                suas entregas em um único lugar.
+            </p>
+        </section>
+        </div>
+    <!-- Tela de Romaneios -->
+<section id="tela-romaneios" style="display: none; padding: 25px;">
+
+    <h1>Romaneios</h1>
+
+    <p>Organize os pedidos para as entregas.</p>
+
+    <h2>Novo Romaneio</h2>
+
+    <form id="form-romaneio">
+
+        <label>Nome do romaneio:</label>
+        <input type="text" id="nome-romaneio" required
+        placeholder="Ex: Entregas - Região Central">
+
+        <h3>Selecione os pedidos:</h3>
+
+        <div id="selecao-pedidos">
+            Carregando pedidos...
+        </div>
+
+        <button type="submit">Criar Romaneio</button>
+
+    </form>
+
+    <h2>Romaneios Criados</h2>
+
+    <div id="lista-romaneios">
+        Nenhum romaneio criado.
+    </div>
+
+<div id="detalhes-romaneio" style="display: none; margin-top: 25px;">
+    <h2>Detalhes do Romaneio</h2>
+    <div id="lista-detalhes-pedidos"></div>
+</div>
+
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
