@@ -67,3 +67,8 @@ Projeto Integrador: Sistemas Web e Personas
 2. Yan Gabriel dos Santos
 3. Thais de Paiva Oliveira
 4. Vitor Avila de Carvalho
+## Vídeo de demonstração
+
+Confira o funcionamento do RomanDigital:
+
+[Assistir à demonstração do RomanDigital](https://github.com/KalelFagundes/RomanDigital/raw/refs/heads/main/demonstracao-romandigital.mp4)
